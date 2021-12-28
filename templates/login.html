@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favic.ico' %}" type="image/icon" sizes="16*16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&family=Ubuntu:wght@400;500;700&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f1bd67616.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="form-section">
+                <h1>Login</h1>
+                <div class="bborder"></div>
+                <div class="main-form">
+                    <form action="login" method="post">
+                        {% csrf_token %}
+                    <input type="text" id="" name="username" value="" placeholder="Enter Your Username">
+                    <input type="password" id="" name="password" value="" placeholder="Enter Your Password">
+                        <h5>
+                    {% for message in messages%}
+                        {{ message }}
+                    {% endfor %}
+                </h5>
+                    <input class="submit-button" type="submit" value="Submit">
+                    </form>
+
+                </div>
+                <h5>New in Autocare?</h5>
+                <a href="register">Register Now</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

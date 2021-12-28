@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.background h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 86px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.background{
+    background: rgba(0,0,0,0.6)url('../images/tre-back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 70px 70px;
+    box-shadow: 0 0 9px 5px #ff0000;
+}
+.specific-cars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.main-part h2{
+    margin-top: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    letter-spacing: 2px
+}
+.border-red{
+    border-bottom: 4px solid red;
+    width: 150px;
+}
+.right-specific-car-1{
+    margin-top: 110px;
+    margin-left: 40px;
+}
+.right-specific-car-1 h1{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 52px;
+        letter-spacing: 3px;
+}
+.right-specific-car-1 p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(104, 104, 104);
+}
+.right-specific-car-2{
+    margin-top: 110px;
+    margin-left: 40px;
+}
+.right-specific-car-2 h1{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 52px;
+        letter-spacing: 3px;
+}
+.right-specific-car-2 p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(104, 104, 104);
+}
+.left-specific-car-1{
+    margin-top: 110px;
+    margin-left: 40px;
+}
+.left-specific-car-1 h1{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 52px;
+        letter-spacing: 3px;
+}
+.left-specific-car-1 p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(104, 104, 104);
+}
+.devide{
+    margin-top: 15px;
+    width: 950px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: rgb(226, 226, 226);
+}

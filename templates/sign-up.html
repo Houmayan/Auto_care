@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="{% static 'css/sign-up.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favic.ico' %}" type="image/icon" sizes="16*16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&family=Ubuntu:wght@400;500;700&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f1bd67616.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="form-section">
+                <h1>Sign-Up</h1>
+                <div class="main-form">
+                    <form action="register" method="post">
+                        {% csrf_token %}
+                    <div class="raj">
+                        <input type="text" id="first_name" name="first_name" value="" placeholder="First Name">
+                        <input type="text" id="last_name" name="last_name" value="" placeholder="Last Name">
+                    </div>
+                     <input type="text" name="username" placeholder="Username">
+                    <input type="text" id="email" name="email" value="" placeholder="Enter Your Email">
+                    <input type="password" id="password" name="password1" value="" placeholder="Enter Your Password">
+                    <input type="password" id="confire_password" name="password2" value="" placeholder="Re-enter Your Password">
+                    <!-- <input class="submit-button" type="submit" value="Submit"> -->
+                    <button class="submit-button" onclick="register()">Register</button>
+                        <h5>
+                            {% for message in messages%}
+                                {{ message }}
+                            {% endfor %}
+                        </h5>
+                    </form>
+                </div>
+                <h5>Already Registered?</h5>
+                <a href="login">Log In</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js"></script>
+<script src="{% static 'js/index.js' %}"></script>
+</html>

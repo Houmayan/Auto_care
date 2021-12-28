@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Form</title>
+    <link rel="stylesheet" href="{% static 'css/showroom_form.css' %}">
+    <script src="https://kit.fontawesome.com/3f1bd67616.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favic.ico" type="image/icon" sizes="16*16" />
+    <!-- GOOGLE_FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="showroom">
+        <div class="upper">
+            <div class="upper-color">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path class="wave" fill="#000b76" fill-opacity="1" d="M0,256L720,320L1440,256L1440,0L720,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="upper-work">
+                <h1>VIRTUAL SHOWROOM</h1>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="container">
+                <div class="v_form">
+                    <div class="v_form_left">
+                        <h1>Guidelines</h1>
+                        <div class="guidelines">
+                            <i class="far fa-lightbulb"></i>
+                            Login to your account.
+                        </div>
+                        <div class="guidelines">
+                            <i class="far fa-lightbulb"></i>
+                            If you don’t have an account, <a href="register">sign up.</a>
+                        </div>
+                        <div class="guidelines">
+                            <i class="far fa-lightbulb"></i>
+                            To make an appointment,  fill up the form and submit it.
+                        </div>
+                        <div class="guidelines">
+                            <i class="far fa-lightbulb"></i>
+                            There will be a response from our website.
+                        </div>
+                        <div class="guidelines">
+                            <i class="far fa-lightbulb"></i>
+                            Once the appointment is confirmed,  one of our consultant will be conducting the live video with the information about your queries
+                        </div>
+                    </div>
+                    {% if request.user.is_authenticated %}
+                        <div class="v_form_right">
+                        <div class="form-section">
+                            <h1>Please Fill Up The Form</h1>
+                            <div class="main-form">
+                                <form action="" method="POST">
+                                    {% csrf_token %}
+                                <input type="text" name="subject" placeholder="Subject">
+                                <input type="email" id="" name="email" placeholder="Enter Your Email to get a copy of appointment">
+
+                                <input type="text" id="" name="msg" placeholder="Your Message for appointment, including name & number">
+
+                                <input class="submit-button" type="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                        {% else %}
+
+                            <h1>Please <a href="login">Log in</a> or <a href="register">Register</a> first to get an appointment</h1>
+                    {% endif %}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+/* STYLE CSS FILE */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.ccolor{
+    color: #F7B101;
+}
+
+/********** HEADER *********/
+.header{
+    background: rgba(0,0,0,0.6)url(../images/car_background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+    height: 100vh;
+}
+.nav-bg{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+}
+.custom-p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(49, 49, 49);
+}
+.logo-name{
+    color: #F7B101 !important;
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+.navbarr{
+border-right: 1px solid #F7B101;
+}
+/************ MAIN **********/
+/************ CONTENT **********/
+.title{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.service-btn{
+    background-color: #F7B101 !important;
+}
+.brand{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.log-reg a{
+    text-decoration: none;
+    padding: 16px 30px;
+    letter-spacing: 1px;
+    background-color: black;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    box-shadow:0 0 6px 1px #ffc107;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+.log-reg a:hover{
+    background-color: #eca200;
+    color: black;
+    font-weight: bold;
+}
+/* tradding */
+.car-section{
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #c6c6c6;
+    transition: 0.5s;
+}
+.banner h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+.car-section:hover{
+    transform: scale(1.1);
+}
+.see-more a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    background-color: #e2a303;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: .5s;
+}
+.see-more a:hover{
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    background-color: #fabe25;
+    letter-spacing: 6px;
+    box-shadow: 0 0 8px 0px #626262;
+}
+
+/********* carcare ***********/
+.carcare{
+    background: rgba(0, 0, 0, 0.65)url(../images/car-care.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 18px 5px #545151;;
+}
+.car-care-heading, .necessary-tool, .virtual-heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.basic-maintenance-section{
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 40px;
+}
+
+
+
+/********* Tools ***********/
+.tools-header{
+    background-color: black;
+}
+.tools-body{
+    background-color: rgb(243, 243, 243);
+}
+.heading_image img{
+    width: 130px;
+}
+.tools-i-2 img{
+    margin-top: 30px;
+}
+.tools-i-2-2 img{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.tools-i-3 img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tools-i-3-2 img{
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+.tools-i-4 img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tools-i-4-2 img{
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+.tools-i-5 img{
+    margin-top: 27px;
+    margin-bottom: 32px;
+}
+.tools-i-6 img{
+    margin-bottom: 22px
+}
+.tools-i-8 img{
+    margin-top: 25px;
+    margin-bottom: 36px;
+}
+.tools-i-2-12 img{
+    margin-bottom: 40px;
+}
+.tools-i-3-13 img{
+    margin-bottom: 40px;
+}
+.tools-i-4-14 img{
+    margin-bottom: 40px;
+}
+
+.tools-body a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+.tools-body a:hover{
+    border: 1px solid rgb(116, 116, 116);
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    background-color: rgb(196, 196, 196);
+    padding: 14px 30px;
+    letter-spacing: 4px;
+}
+
+.contact{
+    background-color: rgb(243, 243, 243);
+}
+
+
+/* showroom */
+.showroom{
+    height:820px;
+}
+.showroom a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #F7B101;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+.showroom img{
+    width: 500px;
+    border-radius: 20px;
+}
+.showroom_heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+.showroom h3{
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+
+/* HANDYMAN */
+.handy-man-top{
+    background-image: url(../images/backg.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.handyman span{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+.handyman h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
